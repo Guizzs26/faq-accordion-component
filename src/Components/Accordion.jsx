@@ -2,7 +2,7 @@
 
 import AccordionItem from "./AccordionItem";
 
-function Accordion({ faqs }) {
+export default function Accordion({ faqs }) {
   return (
     <div className="accordion">
       {faqs.map((faqElement, i) => (
@@ -16,5 +16,3 @@ function Accordion({ faqs }) {
     </div>
   );
 }
-
-export default Accordion;
