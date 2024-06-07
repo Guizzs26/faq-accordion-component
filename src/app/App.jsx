@@ -1,3 +1,12 @@
-import "./App.css";
+import { faqs } from "../data/dataFaqs";
+import "../css/App.css";
 
-export default function App() {}
+import Accordion from "../Components/AccordionItem";
+
+export default function App() {
+  return (
+    <div>
+      <Accordion faqs={faqs} />
+    </div>
+  );
+}

@@ -1,12 +1,17 @@
-import { faqs } from "../data/dataFaqs";
+/* eslint-disable react/prop-types */
 
 import AccordionItem from "./Accordion";
 
-function Accordion() {
+function Accordion({ faqs }) {
   return (
-    <div>
+    <div className="accordion">
       {faqs.map((faqElement, i) => (
-        <AccordionItem faqElement={faqElement} num={i} key={i} />
+        <AccordionItem
+          title={faqElement.title}
+          text={faqElement.text}
+          num={i}
+          key={i}
+        />
       ))}
     </div>
   );
