@@ -6,7 +6,9 @@ This project aims to create an “accordion” component with HTML, CSS and add 
 
 ## Project images
 
-<img src=''></img>
+<img src='/images/image-1.png'></img>
+<img src='/images/image-2.png'></img>
+<img src='./images/image-3.png'></img>
 
 ## Learning 🧠
 
