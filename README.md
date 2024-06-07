@@ -12,7 +12,7 @@ This project aims to create an “accordion” component with HTML, CSS and add 
 
 ## Learning 🧠
 
-> With this project I learned more about structuring pages with HTML, styling and layout with CSS grid and flexbox and also the use of various React tools such as: passing props between components, lifting state up and using state with the useState hook.
+> With this project I learned more about structuring pages with HTML, styling and layout with CSS grid and flexbox and also the use of various React tools such as: passing props between components, conditional rendering, rendering lists and using state with the useState hook.
 
 ## Stack 📌
 
