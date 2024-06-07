@@ -26,7 +26,10 @@ body {
 /*  */
 
 .item {
-  padding: 24px;
+  padding: 20px 24px;
+  padding-right: 48px;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
 
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -35,41 +38,38 @@ body {
   align-items: center;
 
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
-}
 
-.number,
-.title {
-  font-size: 24px;
-  font-weight: 500;
-
-  /* color: #087f5b; */
+  cursor: pointer;
 }
 
 .number {
+  font-size: 24px;
+  font-weight: 500;
   color: #ced4da;
 }
 
+.title,
 .icon {
-  width: 24px;
-  height: 24px;
-
-  stroke: #ced4da;
+  font-size: 24px;
+  font-weight: 500;
 }
 
-.hidden-box {
-  grid-column: 2;
+.content-box {
+  grid-column: 2 / -1;
+  padding-bottom: 16px;
 
-  display: none;
+  line-height: 1.6;
 }
 
-.hidden-box p {
+.content-box p {
   line-height: 1.6;
 
   margin-bottom: 24px;
 }
 
-.hidden-box ul {
-  margin-left: 20px;
+.content-box ul {
+  margin-top: 16px;
+  margin-left: 16px;
 
   display: flex;
   flex-direction: column;
@@ -84,15 +84,7 @@ body {
   border-top: 4px solid #087f5b;
 }
 
-.open .hidden-box {
-  display: block;
-}
-
 .open .number,
 .open .title {
   color: #087f5b;
-}
-
-.open .icon {
-  stroke: #087f5b;
 }

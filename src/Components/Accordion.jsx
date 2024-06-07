@@ -1,15 +1,20 @@
 /* eslint-disable react/prop-types */
 
-function AccordionItem({ title, text, num }) {
-  return (
-    <div>
-      <p className="number">{num < 9 ? `0${num + 1}` : num + 1}</p>
-      <p className="title">{title}</p>
-      <p className="icon">+</p>
+import AccordionItem from "./AccordionItem";
 
-      <div className="content-box">{text}</div>
+function Accordion({ faqs }) {
+  return (
+    <div className="accordion">
+      {faqs.map((faqElement, i) => (
+        <AccordionItem
+          title={faqElement.title}
+          text={faqElement.text}
+          num={i}
+          key={i}
+        />
+      ))}
     </div>
   );
 }
 
-export default AccordionItem;
+export default Accordion;
